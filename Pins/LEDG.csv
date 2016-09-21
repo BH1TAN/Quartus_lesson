@@ -1,0 +1,10 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+LEDG[0],Unknown,PIN_E21,7,B7_N0,2.5 V,,,,
+LEDG[1],Unknown,PIN_E22,7,B7_N0,2.5 V,,,,
+LEDG[2],Unknown,PIN_E25,7,B7_N1,2.5 V,,,,
+LEDG[3],Unknown,PIN_E24,7,B7_N1,2.5 V,,,,
+LEDG[4],Unknown,PIN_H21,7,B7_N2,2.5 V,,,,
+LEDG[5],Unknown,PIN_G20,7,B7_N1,2.5 V,,,,
+LEDG[6],Unknown,PIN_G22,7,B7_N2,2.5 V,,,,
+LEDG[7],Unknown,PIN_G21,7,B7_N1,2.5 V,,,,
+LEDG[8],Unknown,PIN_F17,7,B7_N2,2.5 V,,,,

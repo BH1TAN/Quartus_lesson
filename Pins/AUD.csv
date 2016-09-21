@@ -1,0 +1,7 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+AUD_ADCLRCK,Unknown,PIN_C2,1,B1_N0,3.3-V LVTTL,,,,
+AUD_ADCDAT,Unknown,PIN_D2,1,B1_N0,3.3-V LVTTL,,,,
+AUD_DACLRCK,Unknown,PIN_E3,1,B1_N0,3.3-V LVTTL,,,,
+AUD_DACDAT,Unknown,PIN_D1,1,B1_N0,3.3-V LVTTL,,,,
+AUD_XCK,Unknown,PIN_E1,1,B1_N0,3.3-V LVTTL,,,,
+AUD_BCLK,Unknown,PIN_F2,1,B1_N1,3.3-V LVTTL,,,,

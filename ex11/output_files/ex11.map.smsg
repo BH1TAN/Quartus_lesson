@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ex11.v(15): object "SEG1" differs only in case from object "seg1" in the same scope File: E:/PROJECTS/Quartus_lesson/ex11/ex11.v Line: 15
+Info (10281): Verilog HDL Declaration information at ex11.v(16): object "SEG2" differs only in case from object "seg2" in the same scope File: E:/PROJECTS/Quartus_lesson/ex11/ex11.v Line: 16

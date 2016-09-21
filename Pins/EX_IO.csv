@@ -1,0 +1,8 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+EX_IO[0],Unknown,PIN_J10,8,B8_N1,3.3-V LVTTL,,,,
+EX_IO[1],Unknown,PIN_J14,8,B8_N0,3.3-V LVTTL,,,,
+EX_IO[2],Unknown,PIN_H13,8,B8_N0,3.3-V LVTTL,,,,
+EX_IO[3],Unknown,PIN_H14,8,B8_N0,3.3-V LVTTL,,,,
+EX_IO[4],Unknown,PIN_F14,8,B8_N0,3.3-V LVTTL,,,,
+EX_IO[5],Unknown,PIN_E10,8,B8_N1,3.3-V LVTTL,,,,
+EX_IO[6],Unknown,PIN_D9,8,B8_N1,3.3-V LVTTL,,,,

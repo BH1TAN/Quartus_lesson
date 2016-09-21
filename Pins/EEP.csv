@@ -1,0 +1,3 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+EEP_I2C_SCLK,Unknown,PIN_D14,8,B8_N0,3.3-V LVTTL,,,,
+EEP_I2C_SDAT,Unknown,PIN_E14,8,B8_N0,3.3-V LVTTL,,,,

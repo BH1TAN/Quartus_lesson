@@ -1,0 +1,13 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+TD_DATA[0],Unknown,PIN_E8,8,B8_N2,3.3-V LVTTL,,,,
+TD_DATA[1],Unknown,PIN_A7,8,B8_N1,3.3-V LVTTL,,,,
+TD_DATA[2],Unknown,PIN_D8,8,B8_N2,3.3-V LVTTL,,,,
+TD_DATA[3],Unknown,PIN_C7,8,B8_N2,3.3-V LVTTL,,,,
+TD_DATA[4],Unknown,PIN_D7,8,B8_N2,3.3-V LVTTL,,,,
+TD_DATA[5],Unknown,PIN_D6,8,B8_N2,3.3-V LVTTL,,,,
+TD_DATA[6],Unknown,PIN_E7,8,B8_N2,3.3-V LVTTL,,,,
+TD_DATA[7],Unknown,PIN_F7,8,B8_N2,3.3-V LVTTL,,,,
+TD_HS,Unknown,PIN_E5,8,B8_N2,3.3-V LVTTL,,,,
+TD_VS,Unknown,PIN_E4,8,B8_N2,3.3-V LVTTL,,,,
+TD_CLK27,Unknown,PIN_B14,8,B8_N0,3.3-V LVTTL,,,,
+TD_RESET_N,Unknown,PIN_G7,8,B8_N2,3.3-V LVTTL,,,,

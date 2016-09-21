@@ -1,0 +1,8 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+SD_CLK,Unknown,PIN_AE13,3,B3_N0,3.3-V LVTTL,,,,
+SD_CMD,Unknown,PIN_AD14,3,B3_N0,3.3-V LVTTL,,,,
+SD_DAT[0],Unknown,PIN_AE14,3,B3_N0,3.3-V LVTTL,,,,
+SD_DAT[1],Unknown,PIN_AF13,3,B3_N0,3.3-V LVTTL,,,,
+SD_DAT[2],Unknown,PIN_AB14,3,B3_N0,3.3-V LVTTL,,,,
+SD_DAT[3],Unknown,PIN_AC14,3,B3_N0,3.3-V LVTTL,,,,
+SD_WP_N,Unknown,PIN_AF14,3,B3_N0,3.3-V LVTTL,,,,

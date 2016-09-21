@@ -1,0 +1,2 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+IRDA_RXD,Unknown,PIN_Y15,3,B3_N0,3.3-V LVTTL,,,,

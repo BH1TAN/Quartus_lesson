@@ -1,0 +1,6 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+CLOCK_50,Unknown,PIN_Y2,2,B2_N0,3.3-V LVTTL,,,,
+# CLOCK2_50,Unknown,PIN_AG14,3,B3_N0,3.3-V LVTTL,,,,
+# CLOCK3_50,Unknown,PIN_AG15,4,B4_N2,3.3-V LVTTL,,,,
+# SMA_CLKOUT,Unknown,PIN_AE23,4,B4_N0,3.3-V LVTTL,,,,
+# SMA_CLKIN,Unknown,PIN_AH14,3,B3_N0,3.3-V LVTTL,,,,

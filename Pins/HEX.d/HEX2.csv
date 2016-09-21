@@ -1,0 +1,8 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+HEX2[0],Unknown,PIN_AA25,5,B5_N1,2.5 V,,,,
+HEX2[1],Unknown,PIN_AA26,5,B5_N1,2.5 V,,,,
+HEX2[2],Unknown,PIN_Y25,5,B5_N1,2.5 V,,,,
+HEX2[3],Unknown,PIN_W26,5,B5_N1,2.5 V,,,,
+HEX2[4],Unknown,PIN_Y26,5,B5_N1,2.5 V,,,,
+HEX2[5],Unknown,PIN_W27,5,B5_N1,2.5 V,,,,
+HEX2[6],Unknown,PIN_W28,5,B5_N1,2.5 V,,,,

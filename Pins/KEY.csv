@@ -1,0 +1,5 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+KEY[0],Unknown,PIN_M23,6,B6_N2,2.5 V,,,,
+KEY[1],Unknown,PIN_M21,6,B6_N1,2.5 V,,,,
+KEY[2],Unknown,PIN_N21,6,B6_N2,2.5 V,,,,
+KEY[3],Unknown,PIN_R24,5,B5_N0,2.5 V,,,,

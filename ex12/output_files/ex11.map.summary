@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Sep 21 13:18:50 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : ex11
+Top-level Entity Name : ex12
+Family : Cyclone IV E
+Total logic elements : 173
+    Total combinational functions : 171
+    Dedicated logic registers : 59
+Total registers : 59
+Total pins : 59
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

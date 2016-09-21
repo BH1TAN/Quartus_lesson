@@ -1,0 +1,8 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+HEX5[0],Unknown,PIN_AD18,4,B4_N1,3.3-V LVTTL,,,,
+HEX5[1],Unknown,PIN_AC18,4,B4_N1,3.3-V LVTTL,,,,
+HEX5[2],Unknown,PIN_AB18,4,B4_N0,3.3-V LVTTL,,,,
+HEX5[3],Unknown,PIN_AH19,4,B4_N2,3.3-V LVTTL,,,,
+HEX5[4],Unknown,PIN_AG19,4,B4_N2,3.3-V LVTTL,,,,
+HEX5[5],Unknown,PIN_AF18,4,B4_N1,3.3-V LVTTL,,,,
+HEX5[6],Unknown,PIN_AH18,4,B4_N2,3.3-V LVTTL,,,,

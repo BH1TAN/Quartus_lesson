@@ -1,0 +1,5 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+PS2_CLK,Unknown,PIN_G6,1,B1_N0,3.3-V LVTTL,,,,
+PS2_DAT,Unknown,PIN_H5,1,B1_N1,3.3-V LVTTL,,,,
+PS2_CLK2,Unknown,PIN_G5,1,B1_N0,3.3-V LVTTL,,,,
+PS2_DAT2,Unknown,PIN_F5,1,B1_N0,3.3-V LVTTL,,,,

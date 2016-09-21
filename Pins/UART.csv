@@ -1,0 +1,5 @@
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+UART_RXD,Unknown,PIN_G12,8,B8_N1,3.3-V LVTTL,,,,
+UART_TXD,Unknown,PIN_G9,8,B8_N2,3.3-V LVTTL,,,,
+UART_CTS,Unknown,PIN_G14,8,B8_N0,3.3-V LVTTL,,,,
+UART_RTS,Unknown,PIN_J13,8,B8_N0,3.3-V LVTTL,,,,
