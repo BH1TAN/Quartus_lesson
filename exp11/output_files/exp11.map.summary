@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Sep 21 15:12:35 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : exp11
+Top-level Entity Name : exp11
+Family : Cyclone IV E
+Total logic elements : 6,453
+    Total combinational functions : 6,451
+    Dedicated logic registers : 67
+Total registers : 67
+Total pins : 59
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

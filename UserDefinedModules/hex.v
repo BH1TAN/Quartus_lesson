@@ -1,25 +1,40 @@
 module hex(
-			HEX0,
-			HEX1,
-			HEX2,
-			HEX3,
-			HEX4,
-			HEX5,
-			HEX6,
-			HEX7,
-			hex_data
+			out0,
+			out1,
+			out2,
+			out3,
+			out4,
+			out5,
+			out6,
+			out7,
+			in0,
+			in1,
+			in2,
+			in3,
+			in4,
+			in5,
+			in6,
+			in7
 		);
 		
-		output [6:0] HEX0;		
-		output [6:0] HEX1;		
-		output [6:0] HEX2;		
-		output [6:0] HEX3;		
-		output [6:0] HEX4;		
-		output [6:0] HEX5;		
-		output [6:0] HEX6;		
-		output [6:0] HEX7;		
+		output [6:0] out0;		
+		output [6:0] out1;		
+		output [6:0] out2;		
+		output [6:0] out3;		
+		output [6:0] out4;		
+		output [6:0] out5;		
+		output [6:0] out6;		
+		output [6:0] out7;		
 		
-		input [31:0] hex_data;
+		input [3:0] in0;
+		input [3:0] in1;
+		input [3:0] in2;
+		input [3:0] in3;
+		input [3:0] in4;
+		input [3:0] in5;
+		input [3:0] in6;
+		input [3:0] in7;
+		
 		
 	function [6:0] code;
 		input [3:0] digit;
@@ -33,21 +48,17 @@ module hex(
 				digit  == 4'h7 ? 7'b1111000 :
 				digit  == 4'h8 ? 7'b0000000 :
 				digit  == 4'h9 ? 7'b0010000 :
-				digit  == 4'hA ? 7'b0001000 :
-				digit  == 4'hB ? 7'b0000011 :
-				digit  == 4'hC ? 7'b1000110 :
-				digit  == 4'hD ? 7'b0100001 :
-				digit  == 4'hE ? 7'b0000110 :
+				digit  == 4'hA ? 7'b0111111 :		//显示横线
 									  7'b0001110 ;
 	endfunction
 	
-		assign HEX0 = code(hex_data[3:0]);
-		assign HEX1 = code(hex_data[7:4]);
-		assign HEX2 = code(hex_data[11:8]);
-		assign HEX3 = code(hex_data[15:12]);
-		assign HEX4 = code(hex_data[19:16]);
-		assign HEX5 = code(hex_data[23:20]);
-		assign HEX6 = code(hex_data[27:24]);
-		assign HEX7 = code(hex_data[31:28]);
+		assign out0 = code(in0[3:0]);
+		assign out1 = code(in1[3:0]);
+		assign out2 = code(in2[3:0]);
+		assign out3 = code(in3[3:0]);	
+		assign out4 = code(in4[3:0]);
+		assign out5 = code(in5[3:0]);
+		assign out6 = code(in6[3:0]);
+		assign out7 = code(in7[3:0]);
 
 endmodule
