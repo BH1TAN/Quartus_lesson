@@ -1,0 +1,3 @@
+module Spectrum(
+				channel_address_write,
+				

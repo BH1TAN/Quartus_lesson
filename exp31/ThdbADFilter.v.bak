@@ -1,0 +1,15 @@
+module ThdbADFilter(
+				CLOCK_65,
+				rst_n,
+				data1,
+				data2,
+				ad_data_filter
+			);
+		
+		input					CLOCK_65;
+		input					rst_n;
+		input		[31:0]	data1;
+		input		[31:0]	data2;
+		
+		output	[31:0]	ad_data_filter;
+		
