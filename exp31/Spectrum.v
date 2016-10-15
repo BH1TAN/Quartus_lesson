@@ -92,7 +92,7 @@ module Spectrum(
 						;
 					STATE_WRITE:
 						begin
-							channel_count_write		=	channel_count_read + 14'h1FFF;		//调试用14'h3FFF,正常用1'b1
+							channel_count_write		=	channel_count_read + 1'b1;		//调试用14'h3FFF,正常用1'b1
 							channel_count_write_en	=	1'b1;
 						end
 					STATE_CLEAR:
