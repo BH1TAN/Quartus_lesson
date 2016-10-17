@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 17 22:45:55 2016
+Quartus II 64-Bit Version : 13.1.4 Build 182 03/12/2014 SJ Web Edition
+Revision Name : exp41
+Top-level Entity Name : exp41
+Family : Cyclone IV E
+Total logic elements : 3,389
+    Total combinational functions : 2,918
+    Dedicated logic registers : 1,941
+Total registers : 1941
+Total pins : 225
+Total virtual pins : 0
+Total memory bits : 12,800
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

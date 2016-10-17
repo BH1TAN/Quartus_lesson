@@ -48,7 +48,12 @@ module hex(
 				digit  == 4'h7 ? 7'b1111000 :
 				digit  == 4'h8 ? 7'b0000000 :
 				digit  == 4'h9 ? 7'b0010000 :
-				digit  == 4'hA ? 7'b0111111 :		//显示横线
+				digit  == 4'hA ? 7'b0111111 :	
+				digit	 == 4'hB ? 7'b0000011 :
+				digit  == 4'hC ? 7'b1000110 :
+				digit  == 4'hD ? 7'b0100001 :
+				digit  == 4'hE ? 7'b0000110 :
+				digit  == 4'hF ? 7'b0001110 :
 									  7'b0001110 ;
 	endfunction
 	

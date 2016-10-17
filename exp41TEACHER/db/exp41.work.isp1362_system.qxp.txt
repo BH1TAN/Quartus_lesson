@@ -1,0 +1,68 @@
+Copyright (C) 1991-2014 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
++-----------------------------------------------------------------------+
+; Quartus II QXP Design File                                            ;
++------------------+----------------------------------------------------+
+; Field            ; Value                                              ;
++------------------+----------------------------------------------------+
+; Entity           ; isp1362_system                                     ;
+; Case Sensitive   ;                                                    ;
+; QXP Source       ; isp1362_system.qxp                                 ;
+; Software Version ; Version 13.1.3 Build 178 02/12/2014 SJ Web Edition ;
+; Date             ; Sat Mar 15 11:09:27 2014                           ;
+; Contents         ; Netlist Only                                       ;
+; Family           ; EP4CE115F29C7                                      ;
+; Device           ; CYCLONEIVE6F780C7                                  ;
++------------------+----------------------------------------------------+
+
++-----------------------------------------------------------------------------+
+; Boundary Ports                                                              ;
++---------------------------------+--------+----------------------------------+
+; Port Name                       ; Type   ; Default Value                    ;
++---------------------------------+--------+----------------------------------+
+; clk_clk                         ; input  ; 0                                ;
+; reset_reset_n                   ; input  ; 0                                ;
+; dram_clk_clk                    ; output ; 0                                ;
+; dram_addr [12:0]                ; output ; 0000000000000                    ;
+; dram_ba [1:0]                   ; output ; 00                               ;
+; dram_cas_n                      ; output ; 0                                ;
+; dram_cke                        ; output ; 0                                ;
+; dram_cs_n                       ; output ; 0                                ;
+; dram_dq [31:0]                  ; bidir  ; 00000000000000000000000000000000 ;
+; dram_dqm [3:0]                  ; output ; 0000                             ;
+; dram_ras_n                      ; output ; 0                                ;
+; dram_we_n                       ; output ; 0                                ;
+; fl_WE_N [0:0]                   ; output ; 0                                ;
+; fl_ADDR [22:0]                  ; output ; 00000000000000000000000          ;
+; fl_OE_N [0:0]                   ; output ; 0                                ;
+; fl_CE_N [0:0]                   ; output ; 0                                ;
+; fl_DQ [7:0]                     ; bidir  ; 00000000                         ;
+; otg_DATA [15:0]                 ; bidir  ; 0000000000000000                 ;
+; otg_ADDR [1:0]                  ; output ; 00                               ;
+; otg_RD_N                        ; output ; 0                                ;
+; otg_WR_N                        ; output ; 0                                ;
+; otg_CS_N                        ; output ; 0                                ;
+; otg_RST_N                       ; output ; 0                                ;
+; otg_INT0                        ; input  ; 0                                ;
+; otg_INT1                        ; input  ; 0                                ;
+; fifo_write_clk                  ; input  ; 0                                ;
+; fifo_write_data_readdata [31:0] ; output ; 00000000000000000000000000000000 ;
+; fifo_write_data_read            ; input  ; 0                                ;
+; fifo_write_data_waitrequest     ; output ; 0                                ;
+; fifo_read_clk                   ; input  ; 0                                ;
+; fifo_read_data_writedata [31:0] ; input  ; 00000000000000000000000000000000 ;
+; fifo_read_data_write            ; input  ; 0                                ;
+; fifo_read_data_waitrequest      ; output ; 0                                ;
++---------------------------------+--------+----------------------------------+

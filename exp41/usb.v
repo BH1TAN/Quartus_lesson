@@ -1,18 +1,19 @@
 module usb(
-			cmd_start,
-			cmd_pause,
-			cmd_clear,
-			channel_address,
+			cmd_start,			//o
+			cmd_pause,			//o
+			cmd_clear,			//o
+			channel_address,	//o
 			channel_count,
-			UsbReadData,
-			usb_read_en,
+			UsbReadData,		//o
+			usb_read_en,		//o
 			usb_read_clk,
 			usb_read_data,
 			usb_read_wait,
-			usb_write_en,
+			usb_write_data,	//o
+			usb_write_en,		//o
 			usb_write_clk,
 			usb_write_wait,
-			LEDG,
+			LEDG,					//o
 			rst_n,
 			CLOCK_50
 		);
@@ -31,19 +32,19 @@ module usb(
 	output			cmd_pause;
 	output			cmd_clear;
 	output [9:0]	channel_address;
-	
-	input [31:0]	channel_count;
-	output [15:0]	UsbReadData;
+	output [15:0]	UsbReadData;		//读到的数据
 	output			usb_read_en;
-	input				usb_read_clk;
-	input [15:0]	usb_read_data;
-	input				usb_read_wait;
 	output [15:0]	usb_write_data;
 	output			usb_write_en;
-	input				usb_write_clk;
-	input				usb_write_wait;
 	output [8:0]	LEDG;
 	
+	input [31:0]	channel_count;
+	input				usb_read_clk;
+	input [15:0]	usb_read_data;		//来自isp1362.v
+	input				usb_read_wait;
+	input				usb_write_clk;
+	input				usb_write_wait;
+
 	input				rst_n;
 	input				CLOCK_50;
 	
@@ -86,12 +87,29 @@ module usb(
 							if(usb_read_en)
 								begin
 									usb_read_en	<=	1'b0;
-									UsbReadDate	<=	usb_read_data;
+									UsbReadData	<=	usb_read_data;
 									case(usb_read_data)
-										CMD_FETCH: cmd_fetch	<=	1'b1;
-										CMD_START: cmd_start	<=	1'b1;
-										CMD_PAUSE: cmd_pause	<=	1'b1;
-										CMD_CLEAR: cmd_clear	<=	1'b1;
+										CMD_FETCH: 
+											begin
+												//channel_data = 32'b0;
+												cmd_fetch	<=	1'b1;
+												LEDG <=	8'b00000010;
+											end
+										CMD_START: 
+											begin
+												cmd_start	<=	1'b1;
+												LEDG <=	8'b00000100;
+											end
+										CMD_PAUSE: 
+											begin
+												cmd_pause	<=	1'b1;
+												LEDG <=	8'b00001000;
+											end
+										CMD_CLEAR: 
+											begin
+												cmd_clear	<=	1'b1;
+												LEDG <=	8'b00010000;
+											end
 									endcase
 									
 								end
@@ -114,7 +132,7 @@ module usb(
 			else if(cmd_fetch)
 				begin
 					channel_address	<=	10'b0;
-					channel_data		<=	10'b0;
+					channel_data		<=	32'b0;
 					state					<=	STATE_READ;
 				end
 			else
@@ -123,6 +141,7 @@ module usb(
 						STATE_IDLE:
 							begin
 								usb_write_en	<=	1'b0;
+								channel_data	<=	32'b0;
 							end
 						STATE_READ:
 							begin
@@ -144,14 +163,20 @@ module usb(
 							begin
 								if(usb_write_en)
 									begin
-										usb_write_en	<=	1b0;
+										usb_write_en	<=	1'b0;
 									end
 								else if(!usb_write_wait)
 									begin
 										usb_write_data	<=	channel_data[31:16];
 										usb_write_en	<=	1'b1;
 										channel_data	<=	channel_data + 1'b1;
-										state				<=	STATE_READ;
+										if (channel_data == 32'h1FF)
+											begin
+												channel_data <= 32'b0;
+												state <= STATE_IDLE;
+											end
+										else
+											state	<=	STATE_READ;
 									end
 								else
 									;
