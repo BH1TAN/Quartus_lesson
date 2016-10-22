@@ -71,6 +71,11 @@ module usb(
 					cmd_pause	<=	1'b0;
 					cmd_clear	<=	1'b0;
 					usb_read_en	<=	1'b0;
+					LEDG			<=	8'b0;
+					
+					//调整复位按钮问题
+					UsbReadData	<=	16'b0;
+					//
 				end
 			else
 				begin
@@ -128,12 +133,20 @@ module usb(
 			if(!rst_n)
 				begin
 					state	<=	STATE_IDLE;
+					//调整复位按钮问题
+					channel_address	<=	10'b0;
+					channel_data		<=32'b0;
+					usb_write_en		<=1'b0;
+					usb_write_data		<=16'b0;
+
+					
+					//
 				end
 			else if(cmd_fetch)
 				begin
 					channel_address	<=	10'b0;
-					channel_data		<=	32'b0;
-					state					<=	STATE_READ;
+					channel_data	<=	32'b0;
+					state			<=	STATE_READ;
 				end
 			else
 				begin
@@ -141,7 +154,7 @@ module usb(
 						STATE_IDLE:
 							begin
 								usb_write_en	<=	1'b0;
-								channel_data	<=	32'b0;
+								//channel_data	<=	32'b0;
 							end
 						STATE_READ:
 							begin

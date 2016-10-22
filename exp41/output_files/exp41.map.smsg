@@ -1,4 +1,4 @@
-Info (10281): Verilog HDL Declaration information at exp41.v(43): object "HEX0" differs only in case from object "hex0" in the same scope
+Info (10281): Verilog HDL Declaration information at exp41.v(40): object "HEX0" differs only in case from object "hex0" in the same scope
 Info (10281): Verilog HDL Declaration information at usb.v(22): object "CMD_START" differs only in case from object "cmd_start" in the same scope
 Info (10281): Verilog HDL Declaration information at usb.v(23): object "CMD_PAUSE" differs only in case from object "cmd_pause" in the same scope
 Info (10281): Verilog HDL Declaration information at usb.v(24): object "CMD_CLEAR" differs only in case from object "cmd_clear" in the same scope

@@ -5,34 +5,31 @@ module exp41(
 	//USB********************************		
 	FL_RST_N,
 	FL_WP_N,
-   DRAM_ADDR,
-   DRAM_BA,  
-   DRAM_CAS_N,             
-   DRAM_CKE, 
-   DRAM_CLK, 
-   DRAM_CS_N,
-   DRAM_DQM, 
-   DRAM_RAS_N,             
-   DRAM_WE_N,
-   FL_ADDR,  
-   FL_CE_N,  
-   FL_OE_N,  
-   FL_WE_N,  
-   OTG_ADDR, 
-   OTG_CS_N, 
-   OTG_RD_N, 
-   OTG_RST_N,
-   OTG_WR_N, 
+	DRAM_ADDR,
+	DRAM_BA,  
+	DRAM_CAS_N,             
+	DRAM_CKE, 
+	DRAM_CLK, 
+	DRAM_CS_N,
+	DRAM_DQM, 
+	DRAM_RAS_N,             
+	DRAM_WE_N,
+	FL_ADDR,  
+	FL_CE_N,  
+	FL_OE_N,  
+	FL_WE_N,  
+	OTG_ADDR, 
+	OTG_CS_N, 
+	OTG_RD_N, 
+	OTG_RST_N,
+	OTG_WR_N, 
 	OTG_FSPEED,
-	OTG_LSPEED,
-   usb_read_data,          
-   usb_read_wait,          
-   usb_write_wait,         
-   DRAM_DQ,
-   FL_DQ,
-   OTG_DATA,
+	OTG_LSPEED,        
+	DRAM_DQ,
+	FL_DQ,
+	OTG_DATA,
 
-   OTG_INT,
+	OTG_INT,
 	//USB****************************		
 	
 	CLOCK_50
@@ -58,48 +55,45 @@ module exp41(
 	//USB************************
 	output FL_RST_N;
 	output FL_WP_N;
-   output [12:0]        DRAM_ADDR;
-   output [1:0]         DRAM_BA; 
-   output               DRAM_CAS_N;             
-   output               DRAM_CKE; 
-   output               DRAM_CLK; 
-   output               DRAM_CS_N;
-   output [3:0]         DRAM_DQM; 
-   output               DRAM_RAS_N;             
-   output               DRAM_WE_N;
-   output [22:0]        FL_ADDR;  
-   output               FL_CE_N;  
-   output               FL_OE_N;  
-   output               FL_WE_N;  
-   output [1:0]         OTG_ADDR; 
-   output               OTG_CS_N; 
-   output               OTG_RD_N; 
-   output               OTG_RST_N;
-   output               OTG_WR_N; 
-   output [15:0]        usb_read_data;          
-   output               usb_read_wait;          
-   output               usb_write_wait;         
+	output [12:0]        DRAM_ADDR;
+	output [1:0]         DRAM_BA; 
+	output               DRAM_CAS_N;             
+	output               DRAM_CKE; 
+	output               DRAM_CLK; 
+	output               DRAM_CS_N;
+	output [3:0]         DRAM_DQM; 
+	output               DRAM_RAS_N;             
+	output               DRAM_WE_N;
+	output [22:0]        FL_ADDR;  
+	output               FL_CE_N;  
+	output               FL_OE_N;  
+	output               FL_WE_N;  
+	output [1:0]         OTG_ADDR; 
+	output               OTG_CS_N; 
+	output               OTG_RD_N; 
+	output               OTG_RST_N;
+	output               OTG_WR_N;                 
 
    //inout                OTG_FSPEED = 1'b1;
    //inout                OTG_LSPEED = 1'b0;
-   inout [31:0]         DRAM_DQ;
-   inout [7:0]          FL_DQ;
-   inout [15:0]         OTG_DATA;
-   inout                OTG_LSPEED;
-   inout                OTG_FSPEED;
+	inout [31:0]         DRAM_DQ;
+	inout [7:0]          FL_DQ;
+	inout [15:0]         OTG_DATA;
+	inout                OTG_LSPEED;
+	inout                OTG_FSPEED;
 
-   input [1:0]          OTG_INT;
+	input [1:0]          OTG_INT;
 	//USB************************
 	
 	wire			cmd_start;
 	wire			cmd_pause;
 	wire			cmd_clear;
-	wire [9:0]	channel_address;
-	wire [15:0]	UsbReadData;
+	wire [9:0]		channel_address;
+	wire [15:0]		UsbReadData;
 	wire			usb_read_en;
-	wire [15:0]	usb_write_data;
+	wire [15:0]		usb_write_data;
 	wire			usb_write_en;
-	wire [8:0]	LEDG;
+	wire [8:0]		LEDG;
 	
 	wire [31:0]		channel_count;
 	wire [15:0]		usb_read_data;
@@ -107,39 +101,8 @@ module exp41(
 	wire				usb_write_wait;
 	wire				CLOCK_50;
 	
-	//USB*****************************
-
-   // Beginning of automatic outputs (from unused autoinst outputs)
-   wire [12:0]        DRAM_ADDR;
-   wire [1:0]         DRAM_BA;  
-   wire               DRAM_CAS_N;             
-   wire               DRAM_CKE; 
-   wire               DRAM_CLK; 
-   wire               DRAM_CS_N;
-   wire [3:0]         DRAM_DQM; 
-   wire               DRAM_RAS_N;             
-   wire               DRAM_WE_N;
-   wire [22:0]        FL_ADDR;  
-   wire               FL_CE_N;  
-   wire               FL_OE_N;  
-   wire               FL_WE_N;  
-   wire [1:0]         OTG_ADDR; 
-   wire               OTG_CS_N; 
-   wire               OTG_RD_N; 
-   wire               OTG_RST_N;
-   wire               OTG_WR_N; 
-	
-	wire [31:0]         DRAM_DQ;
-   wire [7:0]          FL_DQ;
-   wire [15:0]         OTG_DATA;
-   // End of automatics
-
-   /*AUTOINPUT*/
-   // Beginning of automatic inputs (from unused autoinst inputs)
-   wire [1:0]          OTG_INT;
-	//USB*********************************
-	
 	wire rst_n = KEY[0];
+	
 	assign LEDR = 17'h0;
 	
 	hex hex0(
